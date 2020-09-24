@@ -1,0 +1,20 @@
+Here's your netlist file for this programming assignment.
+input a b c d e f g h
+output Y_repair
+wires t1 t2 t3 t4 t5 t6 t7 w0 w1 w2 w3 w4 w5 w6 w7
+t1 = NOR(b, c)
+w0 = NOR(f, g)
+t2 = INV(e)
+w1 = INV(h)
+w2 = NOR(c, g)
+w3 = OR(t1, w0)
+t3 = AND(t2, h)
+t4 = AND(w1, b)
+w4 = NOR(t3, t4)
+t5 = AND(d, w3)
+t6 = INV(w4)
+w5 = AND(t5, e)
+w6 = NAND(t6, a)
+t7 = NOR(w6, w2)
+w7 = INV(t7)
+Y_repair = OR(w5, w7)

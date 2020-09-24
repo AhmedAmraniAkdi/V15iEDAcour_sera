@@ -1,0 +1,23 @@
+boolean cin a[0..3] b[0..3] d[15..0]
+#Qi 
+eval q1 a0^b0
+eval q2 a1^b1
+eval q3 a2^b2
+eval q4 a3^b3
+# Bugged implementation
+mux 4 Select q1 q2 q3 q4 d[15..0]
+eval c1 (a0&b0+b0&cin+a0&cin)
+eval c2 (a1&b1+b1&c1+a1&c1)
+eval c3 (a2&b2+b2&c2+a2&c2)
+eval c4 (a3&b3+b3&c3+a3&c3)
+eval cout (Select&cin + !Select&c4)
+# Correct adder
+adder 4 cout_gold sum[3..0] a[3..0] b[3..0] cin
+# EXNOR
+eval equiv !(cout_gold ^ cout)
+# quant
+quantify u result equiv a[0..3] b[0..3] cin
+sop result
+satisfy result
+#
+quit
