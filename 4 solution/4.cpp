@@ -214,6 +214,7 @@ vector<unsigned int> addElementAtEnd(vector<unsigned int> v, unsigned int elem) 
     return v;
 }
 
+// I don't like this many if elses, it works but there has not be a better way
 void expand(priority_queue<wavefrontCell, vector<wavefrontCell>, CompareWavefrontCellPathcost>& wavefront, wavefrontCell C, vector<vector<vector<int>>> grid, Net net, vector<vector<vector<int>>> pathCostToCell, unsigned int bend_penalty, unsigned int via_penalty) {
     // N = 1, S = 2, E = 3, W = 4, U = 5, D = 6
     unsigned int pathcost;

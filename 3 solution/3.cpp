@@ -77,7 +77,7 @@ vector<double> become_pad(double x, double y, int x_div, int y_div, vector<doubl
 
     // acc and vertical are for gates that are inside the partition that need to be moved left or right or up or down
     // I just drew the examples up to 64 partitions and found this relations that I use to partition and find coordinates....
-    // they work ZULUL
+    // they work 
 
     double new_x, new_y;
     bool inside = (x >= up_left[0]) && (x <= (up_left[0] + 100.0 / x_div)) && (y >= up_left[1]) && (y <= (up_left[1] + 100.0 / y_div)); // pads in frontiere will always be inside
@@ -156,7 +156,7 @@ void make_matricesA_B_V3(vector<vector<int>> conectivity_vector, vector<vector<d
 
     // problem with V1 : too much shit going on and bad, didn't really need to make a conectivity vector each time
     // problem with V2: if some gates are connected again in another and doing columns and rows of C wrongly
-    // problem with V3: imagine writing a V4 OMEGAZULUL GIMME THA JUUUUUUICE
+    // problem with V3: imagine writing a V4
 
     vector<int> R, C;
     vector<double> Dat;
