@@ -1,4 +1,7 @@
 // this is madness // yes this is indeed madness
+// the expand part takes too much time because of how many if elses there are
+// there has to be a better way
+// currently doesn't work on the heavy benchmarks, takes too long.
 
 #include <iostream>
 #include <fstream> // file

@@ -1,6 +1,6 @@
 // BooleanComplement.cpp : This file contains the 'main' function. Program execution begins and ends there.
-// TODO : take away total_vars , any list already has size property BUT HEAR ME ON THIS ONE what if the list is emppty, how will u know what the number of vars
-// matrix was the better choice, i started taking away variables from the structs, because i didnt need them and all is left is a struct of a vector LUL
+// can be done a lot better, was a bit rusty on c++ then, when I was doing this course
+// it works, I got my grades and moved onto the next assignments.
 
 #include <iostream>
 #include <fstream>
@@ -480,7 +480,7 @@ int main()
     return 0;
 }
 
-// das wright, happiness flows through my veins it worked, this abomination worked
+// this abomination worked
 
 // need to work on knowing better the data structures
 // nothing gives you more power than debuggin a 15 variable 154 termes boolean function

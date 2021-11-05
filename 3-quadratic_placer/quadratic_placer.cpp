@@ -1,4 +1,6 @@
 // this is madness // yes this is indeed madness
+// recursive quadratic placer, places gates in an uniform manner on the surface
+// more info on quadratic_placer.pdf
 
 #include <iostream>
 #include <fstream> // file
